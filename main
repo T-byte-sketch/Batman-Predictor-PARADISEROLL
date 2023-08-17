@@ -48,4 +48,4 @@ async def roulette(ctx):
     await ctx.send(embed=embed)
 
 # Replace 'YOUR_BOT_TOKEN' with your actual bot token
-bot.run('MTAxMTgzOTYwOTExOTk2NTMwNA.Gi_b1T.PPIazWDIDP7pypyWrWNcdh2w-Z1TrRA0TNoiVg')
+bot.run('YOUR_BOT_TOKEN')
