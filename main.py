@@ -16,9 +16,9 @@ async def crash(ctx):
     rand = random.random()
     
     if rand < 0.7:
-        random_number = round(random.triangular(1.00, 3.00, 2.50), 2)  # Triangle biased towards lower values
+        random_number = round(random.triangular(1.00, 3.00, 2.50), 2) 
     else:
-        random_number = round(random.triangular(3.00, 5.00, 4.00), 2)  # Triangle biased towards higher values
+        random_number = round(random.triangular(3.00, 5.00, 4.00), 2)  
     
     embed = discord.Embed(
         title="Crash Value",
@@ -32,10 +32,10 @@ async def crash(ctx):
 
 @bot.command()
 async def roulette(ctx):
-    colors = ['green', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'blue', 'red', 'red', 'blue', 'blue', 'red', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red']  # Blue and red are more common than green
+    colors = ['green', 'blue', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'blue', 'red', 'red', 'blue', 'blue', 'red', 'red', 'blue', 'red', 'blue', 'red', 'blue', 'red']  
     chosen_color = random.choice(colors)
     
-    thumbnail_url = "https://media.discordapp.net/attachments/1008775844740734996/1141583913911853056/FxiYRy2agAAhDaH.png?width=1000"  # Adjusted width
+    thumbnail_url = "https://media.discordapp.net/attachments/1008775844740734996/1141583913911853056/FxiYRy2agAAhDaH.png?width=1000"  
     
     embed = discord.Embed(
         title="Roulette Result",
